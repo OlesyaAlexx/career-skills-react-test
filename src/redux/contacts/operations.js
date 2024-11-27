@@ -1,4 +1,4 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+/* import { createAsyncThunk } from "@reduxjs/toolkit";
 import { goitAPI } from "../../config/goitAPI";
 
 export const fetchContactsThunk = createAsyncThunk(
@@ -66,3 +66,4 @@ export const updateContactThunk = createAsyncThunk(
     }
   }
 );
+ */

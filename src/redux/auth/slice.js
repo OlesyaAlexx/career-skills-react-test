@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+/* import { createSlice } from "@reduxjs/toolkit";
 import {
   registerThunk,
   loginThunk,
@@ -55,3 +55,4 @@ const slice = createSlice({
 });
 
 export const authReducer = slice.reducer;
+ */

@@ -14,16 +14,23 @@
 .box {
   display: flex;
   justify-content: space-between;
-  margin-top: 7%;
-  padding-bottom: 30%;
-  height: 100%;
+  /*   margin-top: 7%;
+  padding-bottom: 30%; */
+  /*   height: 100%; */
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../../images/Car-min.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .textContainer {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  margin-top: 280px;
 }
 
 .title {
@@ -35,9 +42,28 @@
 }
 
 .text {
-  font-size: 20px;
+  font-size: 24px;
   text-align: start;
   font-weight: 600;
+  color: white;
+}
+
+.linkCatalog {
+  height: 56px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e44848;
+  padding: 16px 60px;
+  border-radius: 200px;
+  gap: 10px;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.linkCatalog:hover {
+  background-color: #8b2323;
 }
 @media screen and (min-width: 320px) and (max-width: 604px) {
   .box {

@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+/* import { useDispatch, useSelector } from "react-redux";
 import { selectIsLoggedIn } from "../../redux/auth/selectors";
 import { registerThunk } from "../../redux/auth/operations";
 import { Navigate, Link } from "react-router-dom";
@@ -85,3 +85,4 @@ const RegistrationForm = () => {
   );
 };
 export default RegistrationForm;
+ */

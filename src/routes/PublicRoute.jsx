@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+/* import { useSelector } from "react-redux";
 import { selectIsLoggedIn } from "../redux/auth/selectors";
 import { useLocation, Navigate } from "react-router-dom";
 
@@ -10,3 +10,4 @@ export const PublicRoute = ({ children }) => {
   }
   return children;
 };
+ */

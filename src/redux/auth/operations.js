@@ -1,4 +1,4 @@
-import { clearToken, goitAPI, setToken } from "../../config/goitAPI";
+/* import { clearToken, goitAPI, setToken } from "../../config/goitAPI";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 export const registerThunk = createAsyncThunk(
@@ -64,3 +64,4 @@ export const refreshThunk = createAsyncThunk(
     }
   }
 );
+ */

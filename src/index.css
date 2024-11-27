@@ -16,10 +16,6 @@ body {
   padding: 0;
   line-height: 1.5;
   /*  background-image: linear-gradient(to top, #274443, #9cbbc0); */
-  background-image: url("../src/images/tsvety.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 h1,

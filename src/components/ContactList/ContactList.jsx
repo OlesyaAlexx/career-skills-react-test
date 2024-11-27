@@ -1,4 +1,4 @@
-import Contact from "../Contact/Contact";
+/* import Contact from "../Contact/Contact";
 import style from "./ContactList.module.css";
 import { useSelector } from "react-redux";
 import {
@@ -38,4 +38,4 @@ const ContactList = ({ contacts, onEditClick }) => {
     </ul>
   );
 };
-export default ContactList;
+export default ContactList; */

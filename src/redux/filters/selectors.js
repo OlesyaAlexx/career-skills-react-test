@@ -1,3 +1,1 @@
-export const selectNameFilter = (state) => state.filters.name; //селектор
-
-
+/* export const selectNameFilter = (state) => state.filters.name; //селектор */

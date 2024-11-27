@@ -1,4 +1,4 @@
-//Імпортуємо файли з папки components та data в App.jsx
+/* //Імпортуємо файли з папки components та data в App.jsx
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, lazy, Suspense } from "react";
 import { refreshThunk } from "./redux/auth/operations";
@@ -61,6 +61,34 @@ const App = () => {
         </Route>
       </Routes>
     </Suspense>
+  );
+};
+
+export default App;
+ */
+
+import { Routes, Route } from "react-router-dom";
+import { lazy, Suspense } from "react";
+const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
+const CatalogPage = lazy(() => import("./pages/CatalogPage/CatalogPage.jsx"));
+const Navigation = lazy(() => import("./components/Navigation/Navigation.jsx"));
+const NotFoundPage = lazy(() =>
+  import("./pages/NotFoundPage/NotFoundPage.jsx")
+);
+const Loader = lazy(() => import("./components/Loader/Loader.jsx"));
+
+const App = () => {
+  return (
+    <>
+      <Navigation />
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/catalog" element={<CatalogPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
+    </>
   );
 };
 

@@ -1,4 +1,4 @@
-import style from "./HomePage.module.css";
+/* import style from "./HomePage.module.css";
 import internetMin from "../../images/internetMin.jpeg";
 
 const HomePage = () => {
@@ -16,6 +16,26 @@ const HomePage = () => {
           alt="Internet Contact"
           className={style.responsiveImage}
         />
+      </div>
+    </div>
+  );
+};
+export default HomePage;
+ */
+import { Link } from "react-router-dom";
+import style from "./HomePage.module.css";
+
+const HomePage = () => {
+  return (
+    <div className={style.box}>
+      <div className={style.textContainer}>
+        <h1 className={style.title}>Campers of your dreams</h1>
+        <h2 className={style.text}>
+          You can find everything you want in our catalog
+        </h2>
+        <Link to="/catalog" className={style.linkCatalog}>
+          View Now
+        </Link>
       </div>
     </div>
   );

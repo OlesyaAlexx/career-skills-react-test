@@ -1,4 +1,4 @@
-import style from "./Modal.module.css";
+/* import style from "./Modal.module.css";
 
 const Modal = ({ isOpen, onClose, onConfirm, children }) => {
   if (!isOpen) return null;
@@ -24,3 +24,4 @@ const Modal = ({ isOpen, onClose, onConfirm, children }) => {
 };
 
 export default Modal;
+ */

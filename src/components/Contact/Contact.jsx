@@ -1,4 +1,4 @@
-import style from "./Contact.module.css";
+/* import style from "./Contact.module.css";
 import { FaPhone } from "react-icons/fa6";
 import { FaEdit } from "react-icons/fa";
 import { RiContactsFill } from "react-icons/ri";
@@ -66,4 +66,4 @@ const Contact = ({ contact, onEditClick }) => {
   );
 };
 
-export default Contact;
+export default Contact; */

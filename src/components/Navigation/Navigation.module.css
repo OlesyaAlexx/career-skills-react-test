@@ -2,19 +2,47 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
-  padding: 20px 40px 20px 40px;
-  background-color: rgb(41, 206, 206);
-  border-radius: 12px;
+  padding: 20px 40px;
+  background-color: rgb(238, 241, 241);
+  border-radius: 8px;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   box-shadow: 2px 2px 4px 4px rgb(252, 249, 249);
   text-transform: uppercase;
   line-height: 1;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.navigation {
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5e5b5b;
+}
+
+.logoLink {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.logoLink:hover,
+.logoLink:focus {
+  color: #222427;
+}
+
+.link {
+  text-decoration: none;
+  color: #111010;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.active {
+  font-weight: bold;
+  color: #d84343;
+}
+/* .navigation {
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
@@ -30,6 +58,13 @@
   -webkit-text-shadow: 2px 2px 2px #000;
   -moz-text-shadow: 2px 2px 2px #000;
   text-shadow: 2px 2px 2px #000;
+} */
+.nav {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {

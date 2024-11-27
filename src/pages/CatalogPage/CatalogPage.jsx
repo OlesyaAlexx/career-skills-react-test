@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+/* import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { fetchContactsThunk } from "../../redux/contacts/operations";
 import ContactForm from "../../components/ContactForm/ContactForm";
@@ -57,3 +57,9 @@ const ContactsPage = () => {
 };
 
 export default ContactsPage;
+ */
+
+const CatalogPage = () => {
+  return <div></div>;
+};
+export default CatalogPage;
