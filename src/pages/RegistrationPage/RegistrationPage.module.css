@@ -1,0 +1,26 @@
+.case {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #274443, #9cbbc0);
+  background-size: cover;
+  padding: 20px;
+  margin-top: 7px;
+}
+
+.title {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 20px;
+  -webkit-text-shadow: 2px 2px 2px #000;
+  -moz-text-shadow: 2px 2px 2px #000;
+  text-shadow: 3px 3px 3px #313030;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .case {
+    justify-content: flex-start;
+  }
+}

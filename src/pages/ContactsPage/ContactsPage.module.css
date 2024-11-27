@@ -1,0 +1,22 @@
+.case {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: auto;
+  height: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .case {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .case {
+    width: 720px;
+  }
+}

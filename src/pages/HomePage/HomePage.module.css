@@ -1,0 +1,92 @@
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.responsiveImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7%;
+  padding-bottom: 30%;
+  height: 100%;
+}
+
+.textContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  color: #1a393b;
+  -webkit-text-shadow: 2px 2px 2px #000;
+  -moz-text-shadow: 2px 2px 2px #000;
+  text-shadow: 3px 3px 3px #ebe5e5;
+}
+
+.text {
+  font-size: 20px;
+  text-align: start;
+  font-weight: 600;
+}
+@media screen and (min-width: 320px) and (max-width: 604px) {
+  .box {
+    display: block;
+  }
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .imageContainer {
+    margin-right: 0;
+  }
+  .responsiveImage {
+    max-width: 90%;
+  }
+
+  .textContainer {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 605px) and (max-width: 767px) {
+  .responsiveImage {
+    max-width: 70%;
+  }
+  .box {
+    display: block;
+  }
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .imageContainer {
+    margin-right: 0;
+  }
+  .textContainer {
+    display: block;
+    text-align: center;
+  }
+}
