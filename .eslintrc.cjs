@@ -17,5 +17,9 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
+    "no-unused-vars": [
+      "error",
+      { argsIgnorePattern: "^_" }, // Ігноруємо змінні, що починаються з `_`
+    ],
   },
 };

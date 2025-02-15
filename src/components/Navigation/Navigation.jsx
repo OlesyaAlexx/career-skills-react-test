@@ -32,10 +32,10 @@ const buildLinkClass = ({ isActive }) => {
 
 const Navigation = () => {
   return (
-    <nav className={styles.box}>
+    <nav className={`${styles.box} container`}>
       <div className={styles.logo}>
         <NavLink to="/" className={styles.logoLink}>
-          TravelTrucks
+          Travel<span className={styles.logoTitle}>Trucks</span>
         </NavLink>
       </div>
       <ul className={styles.nav}>

@@ -39,3 +39,47 @@ const ContactList = ({ contacts, onEditClick }) => {
   );
 };
 export default ContactList; */
+
+import { useSelector } from "react-redux";
+import CampersCard from "../CampersCard/CampersCard.jsx";
+import style from "./CampersList.module.css";
+import Loader from "../Loader/Loader.jsx";
+import {
+  selectFilteredCampers,
+  /* selectCampers, */
+  selectIsLoading,
+  selectError,
+} from "../../redux/campers/selectors.js";
+
+const CampersList = () => {
+  const campers = useSelector(selectFilteredCampers);
+
+  /* const campers = useSelector((state) => state.campers.data); */
+  console.log("Campers passed to CampersList:", campers);
+  const isLoading = useSelector(selectIsLoading);
+  const error = useSelector(selectError);
+
+  if (isLoading) {
+    return <Loader loading={isLoading} size={50} />;
+  }
+
+  if (error) {
+    return <div>Something went wrong: {error.message || error}</div>;
+  }
+
+  // Перевіряємо, чи campers існує і чи це масив з елементами
+  if (!Array.isArray(campers) || campers.length === 0) {
+    return <p>No campers available or data format is incorrect.</p>;
+  }
+  console.log("Campers in CampersList:", campers);
+
+  return (
+    <div className={style.campersList}>
+      {campers.map((camper) => (
+        <CampersCard key={camper.id} camper={camper} />
+      ))}
+    </div>
+  );
+};
+
+export default CampersList;

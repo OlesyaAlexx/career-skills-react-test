@@ -71,6 +71,9 @@ import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
 const CatalogPage = lazy(() => import("./pages/CatalogPage/CatalogPage.jsx"));
+const CamperDetailsPage = lazy(() =>
+  import("./pages/CamperDetailsPage/CamperDetailsPage.jsx")
+);
 const Navigation = lazy(() => import("./components/Navigation/Navigation.jsx"));
 const NotFoundPage = lazy(() =>
   import("./pages/NotFoundPage/NotFoundPage.jsx")
@@ -85,6 +88,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/catalog" element={<CatalogPage />} />
+          <Route path="/catalog/:id" element={<CamperDetailsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

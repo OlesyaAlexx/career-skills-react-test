@@ -40,3 +40,15 @@ const persistConfig = {
 });
 
 export const persistor = persistStore(store);  */
+
+import { configureStore } from "@reduxjs/toolkit";
+import campersReducer from "./campers/slice.js";
+
+const store = configureStore({
+  reducer: {
+    campers: campersReducer, // Додаємо редюсер кемперів
+  },
+  devTools: import.meta.env.VITE_NODE_ENV !== "production", // Увімкнення Redux DevTools у режимі розробки
+});
+
+export default store;

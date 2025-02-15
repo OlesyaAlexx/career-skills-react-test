@@ -1,9 +1,10 @@
 .box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background-color: rgb(238, 241, 241);
+  gap: 450px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #f7f7f7;
   border-radius: 8px;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -14,6 +15,8 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   font-size: 1.8rem;
   font-weight: bold;
   color: #5e5b5b;
@@ -21,13 +24,15 @@
 
 .logoLink {
   text-decoration: none;
-  color: inherit;
+  color: #101828;
   transition: color 0.3s ease;
+  text-transform: capitalize;
+  font-size: 24px;
 }
 
-.logoLink:hover,
-.logoLink:focus {
-  color: #222427;
+.logoTitle {
+  color: #475467;
+  text-shadow: 1px 1px 1px #475467;
 }
 
 .link {
@@ -36,11 +41,13 @@
   font-size: 1rem;
   font-weight: 600;
   transition: color 0.3s ease;
+  text-transform: capitalize;
 }
 
 .active {
   font-weight: bold;
   color: #d84343;
+  text-transform: capitalize;
 }
 /* .navigation {
   font-size: 30px;
@@ -62,7 +69,6 @@
 .nav {
   display: flex;
   gap: 30px;
-  margin: 0 auto;
   list-style: none;
   padding: 0;
 }
@@ -79,5 +85,10 @@
     -webkit-text-shadow: 2px 2px 2px #000;
     -moz-text-shadow: 2px 2px 2px #000;
     text-shadow: 2px 2px 2px #000;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .box {
+    gap: 600px;
   }
 }

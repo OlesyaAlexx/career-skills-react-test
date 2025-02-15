@@ -27,7 +27,7 @@ import style from "./HomePage.module.css";
 
 const HomePage = () => {
   return (
-    <div className={style.box}>
+    <div className={`${style.box} container`}>
       <div className={style.textContainer}>
         <h1 className={style.title}>Campers of your dreams</h1>
         <h2 className={style.text}>

@@ -21,15 +21,23 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
  */
 
-/* import React from "react"; */
 import ReactDOM from "react-dom/client";
+import { StrictMode } from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
 import "modern-normalize";
 import App from "./App.jsx";
+import store from "./redux/store";
 import "./index.css";
-import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <StrictMode>
+    <Provider store={store}>
+      {" "}
+      {/* Підключення Redux */}
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
+  </StrictMode>
 );

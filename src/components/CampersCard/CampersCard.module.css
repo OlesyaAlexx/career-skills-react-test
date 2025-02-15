@@ -1,0 +1,300 @@
+/* .containerContact {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgb(40, 181, 185);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: rgb(237, 243, 248);
+  box-shadow: 0px 0px 2px 2px rgb(252, 249, 249);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.button {
+  background-color: rgb(41, 206, 206);
+  color: rgb(1, 14, 14);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.buttonEdit {
+  background-color: rgb(41, 206, 206);
+  color: rgb(1, 14, 14);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #d32f2f;
+  color: black;
+}
+
+.buttonEdit:hover {
+  background-color: rgb(35, 148, 133);
+}
+.icon {
+  margin-right: 5px;
+  padding-top: 2px;
+  margin-bottom: -1px;
+}
+.buttonCase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .containerContact {
+    display: block;
+  }
+
+  .info {
+    align-items: center;
+  }
+  .button {
+    padding: 6px 10px;
+    font-weight: 400;
+  }
+
+  .buttonEdit {
+    padding: 6px 10px;
+    font-weight: 400;
+  }
+} */
+
+.card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  /* max-width: 800px; */
+  margin: 20px auto;
+}
+
+.imageContainer {
+  flex: 0 0 40%;
+}
+
+.image {
+  width: 100%;
+  /*  width: 292px; */
+  height: 320px;
+  flex-shrink: 0;
+  /*  height: auto; */
+  object-fit: cover;
+  border-radius: 10px;
+  background: url(<path-to-image>) lightgray -57.393px -4.801px / 195.679%
+    103.001% no-repeat;
+}
+
+.topTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  /* font-family: Inter; */
+  color: #101828;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.favoriteButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.favoriteButton:hover {
+  transform: scale(1.2);
+}
+.favoriteButton svg {
+  fill: currentColor; /* Використовує колір із властивості color */
+  transition: fill 0.3s ease;
+}
+.favoriteButton.active svg {
+  fill: red; /* Активний стан сердечка */
+}
+
+.showMoreButton {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.showMoreButton:hover {
+  background-color: #e05555;
+}
+.info {
+  padding: 16px;
+  flex: content;
+}
+
+.price {
+  color: #101828;
+  /*  font-family: Inter; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #101828;
+  /*  margin-bottom: 8px; */
+}
+.iconStar {
+  fill: #ffc531;
+}
+.reviews {
+  color: #101828;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+}
+.ratingLocation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.locContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 4px;
+}
+.location {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}
+.iconLocation {
+  fill: #101828;
+}
+.details {
+  display: -webkit-box;
+  /*  width: 525px; */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--Text, #475467);
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  margin-bottom: 24px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa; /* Світлий фон */
+  border: 1px solid #e0e0e0; /* Світла рамка */
+  border-radius: 16px; /* Закруглені кути */
+  padding: 8px 12px; /* Внутрішні відступи */
+  font-size: 14px; /* Розмір тексту */
+  color: #101828; /* Темний текст */
+  gap: 8px; /* Відступ між іконкою та текстом */
+  white-space: nowrap; /* Уникнення переносу тексту */
+}
+
+.iconFeatures {
+  display: inline-block;
+  width: 20px; /* Перевірте розмір */
+  height: 20px;
+  fill: currentColor; /* Встановіть потрібний колір */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: inherit;
+  stroke-width: 0;
+  stroke: currentColor;
+}
+
+.iconNoFill {
+  fill: none; /* Вимкнення заливки */
+}
+
+.showMoreButton {
+  /*  width: 100%; */
+
+  background: #e44848;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: -0.08px;
+  /*  display: flex; */
+  width: 166px;
+  padding: 16px 40px;
+  /*  justify-content: center;
+  align-items: center;
+  gap: 10px; */
+  border-radius: 200px;
+}
+
+.showMoreButton:hover {
+  background: #ad2d2d;
+}
